@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Meu perfil</title>
+</head>
+<body>
+    <!--Tag container para fazer com que todas as divs fiquem dentro de uma div e não fiquem "soltas".-->
+    <div class="container">
+        <!--Header é o cabeçalho do site, onde ficam por exemplo os botões de Home e de pesquisa.-->
+        <header>
+            <div class="header">
+                <img class = "logo" src="img/eQuiX_of.png" alt="">
+            </div>
+        </header>
+        <!--Onde se encontra o perfil e as boas vindas ao site.-->
+        <div class="contentBoxtop">
+            <div class="boxTop">
+                <div class="boxT1">
+                    <a href="https://github.com/Vinicchii" target="_blank"><img  class= "eu"src="img/Vini.png" alt=""></a>
+                </div>
+                <div class="boxT2">
+                    <p>Olá, seja bem vindo(a)!<br>
+                    <br> Eu sou Vinicius e criei este website com 
+                    o intuito de testar os meus conhecimentos em HTML/CSS e Javascript.
+                    <br><br><b>Sinta-se avontade para interagir com o projeto.</b>
+                </p>
+                </div>
+            </div>
+        </div>
+        <!--Onde ficam os botões que ativam a terceira "caixa" do site.-->
+        <div class="contentBoxmid">
+            <div class="boxMiddle">
+                <button class="btn" id="btn1" onclick="$caixa1()">Sobre mim</button>
+                <button class="btn" id="btn2" onclick="$caixa2()">Formação</button>
+                <button class="btn" id="btn3" onclick="$caixa3()">O que faço?</button>
+            </div>
+        </div>
+        <!--Caixa do botão "sobre mim".-->
+        <div class="botSobremim" id="sobre1">
+            <div class="sobre" >
+                <b>Sobre mim</b><br><br>
+                <p>
+                Tenho 24 anos, sou bastante
+                tranquilo, criativo e proativo.<br>
+                Gosto de passar mais tempo com
+                a minha família, ouvindo música 
+                ou apenas jogando.<br><br>
+                Ao lado vou deixar as 3 musicas/jogos que
+                mais gosto no momento.
+                </p>
+
+            </div>
+            <div class="gostos">
+                <div class="gosto-1"><b>Músicas</b>
+                    <ul>
+                        <li><a href="https://open.spotify.com/intl-pt/track/3fgehc497TFqKH1zBL2YNK" target="_blank"><img class="img" src="https://i.scdn.co/image/ab67616d00001e025e2801d58ceb23a9d19308b7" alt="Heavy is the crown"></a></li>
+                        <li><a href="https://open.spotify.com/intl-pt/track/69Sy7207dnixZ6w7RSV9Kb" target="_blank"><img src="https://i.scdn.co/image/ab67616d00001e02304ae5169ad8e53e261b93f2" alt="RISE" class="img"></a></li>
+                        <li><a href="https://open.spotify.com/intl-pt/track/2DgdHcjWmO3qd50RzuBLgZ" target="_blank"><img src="https://i.scdn.co/image/ab67616d00001e0223152d9337d6c57b116ed13a" alt="House of Memories" class="img"></a></li>
+                    </ul>
+                </div>
+                <div class="gosto-2"><b>Games</b>
+                    <ul>
+                        <li><a href="https://www.twitch.tv/directory/category/ea-sports-fc-25" target="_blank"><img src="https://static-cdn.jtvnw.net/ttv-boxart/2011938005_IGDB-285x380.jpg" alt="EA Sports FC 25" class="img"></a></li>
+                        <li><a href="https://www.twitch.tv/directory/category/league-of-legends" target="_blank"><img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-285x380.jpg" alt="League of Legends" class="img"></a></li>
+                        <li><a href="https://www.twitch.tv/directory/category/baldurs-gate-3" target="_blank"><img src="https://static-cdn.jtvnw.net/ttv-boxart/512923_IGDB-285x380.jpg" alt="Baldur's Gate 3" class="img"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Caixa do botão "Formação".-->
+        <div class="botCurso" id="display-curso">
+            <div class="boxCC">
+                <div  id="btnC" class="boxC" onmouseenter="color1()" onmouseout="mout1()">
+                    <img onclick="textC()" onmouseenter="color1()" onmouseout="mout1()" src="https://cdn-icons-png.flaticon.com/512/1816/1816015.png " alt="Graduation"  class="imgC" id="imgC-1">
+                </div>
+                <div id="btnC-2" class="boxC" onmouseenter="color2()" onmouseout="mout2()"><img onclick="textC2()" onmouseenter="color2()" onmouseout="mout2()" src="https://cdn-icons-png.flaticon.com/512/6577/6577192.png" alt="Hard Skills" class="imgC" id="imgC-2"></div>
+                <div id="btnC-3" class="boxC" onmouseenter="color3()" onmouseout="mout3()"><a><img onclick="textC3()" onmouseenter="color3()" onmouseout="mout3()" src="   https://cdn-icons-png.flaticon.com/512/3803/3803307.png " alt="Soft Skills" class="imgC" id="imgC-3"></a></div>
+            </div>
+            <div class="cursoDesc" id="curso" style="text-align: center;"><b>Formação</b><br><br>
+                Eu estou no último semestre de Análise e Desenvolvimento de Sistema na Cruzeiro
+                do Sul. <br><br>Desde pequeno
+                tive a oportunidade de ter um computador e a tecnologia
+                tem me acompanhado desde dos meus 6 anos até atualmente.<br><br>
+                A área de TI não foi a minha primeira escolha, tinha sido Recursos Humanos,
+                porém não me identifiquei com o curso e tranquei no primeiro semestre. Um
+                ano depois, me inscrevi em ADS e me encontrei na área.
+
+                
+            </div>
+        </div>
+        <!--Caixa do botão de "profissão".-->
+        <div class="botProf" id="display-prof">
+            <div class="profAtual"><b>O que faço?</b><br>
+                <p>Trabalho na Nestlé há 4 anos e atuo como Merchandiser, 
+                    também conhecido como "Promotor de Vendas". É o profissional
+                    que cuida das mercadorias, preços, layouts e execuções da empresa
+                     dentro de um cliente.
+                </p>
+            </div>
+            <div class="boxExecs">
+                <img src="img/exec1.jpg" alt="" class="execs">
+                <img src="img/exec2.jpg" alt="" class="execs">
+                <img src="img/exec3.jpg" alt="" class="execs">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
